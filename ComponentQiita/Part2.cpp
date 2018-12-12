@@ -8,7 +8,8 @@
 //class Object
 //{
 //public:
-//
+//	Object() {}
+//	virtual ~Object() {}
 //	int x, y;
 //	virtual void Update() {}
 //	virtual void Draw() {}

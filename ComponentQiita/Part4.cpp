@@ -12,6 +12,8 @@ class Component
 {
 protected:
 public:
+	Component() {}
+	virtual ~Component() {}
 	Object *Parent;
 	virtual void Start() {}
 	virtual void Update() {}
@@ -180,6 +182,9 @@ public:
 
 int main()
 {
+#ifdef _DEBUG
+	_CrtSetDbgFlag(_CRTDBG_ALLOC_MEM_DF | _CRTDBG_LEAK_CHECK_DF);
+#endif
 	//’Ç‰Á
 	Object* obj = new Object;
 	Position* pos = obj->AddComponent<Position>();

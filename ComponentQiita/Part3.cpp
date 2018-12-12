@@ -11,6 +11,8 @@
 //{
 //protected:
 //public:
+//	Component() {}
+//	virtual ~Component() {}
 //	Object *Parent;
 //	virtual void Start() {}
 //	virtual void Update() {}
